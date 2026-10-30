@@ -1,34 +1,125 @@
 footer {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    align-items: center;
-    img {
-        height: 1em;
-    }
-    background-color: #16171C;
-    color: #9c9da2;
-    div {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        gap: 2em;
-        a {
-            color: #9c9da2;
-            text-decoration: none;
-        }
+	display: flex;
+	flex-flow: row;
+	justify-content: space-evenly;
+	align-items: center;
+	img {
+		height: 1em;
+		filter: invert();
+	}
+	background-color: #16171C;
+	color: #9c9da2;
+	div {
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+		gap: 2em;
+		a {
+			color: #9c9da2;
+			text-decoration: none;
+		}
 
-    }
-    padding: 1em 0;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 400;
-}
-* {
-
+	}
+	padding: 1.5em 0;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 400;
 }
 body {
-    margin: 0;
+	margin: 0;
 }
 .hero {
-    height: 10em;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+	radial-gradient(ellipse at 80% 15%, #f3dce8, transparent 60%),
+	radial-gradient(ellipse at 60% 0%, #fae6d1, transparent 55%),
+	#fbfbfa;
+}
+
+.hero-graph {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+  mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+}
+.hero-graph canvas {
+	display: block;
+	background: transparent;
+	pointer-events: none;
+}
+
+.hero > .container {
+	
+	width: 90%;
+	margin: auto;
+	padding-top: 4em;
+	position: relative;
+	z-index: 1;
+	h1, p{
+		width: 80%;
+	}
+	p {
+		font-size: 1.6em;
+	}
+	h1 {
+		font-size: 6em;
+		margin-bottom: 0;
+	}
+
+	.button-bottom-gap {
+		padding-bottom: 6em;
+	}
+}
+.gradient-text {
+	background: linear-gradient(to right, #acbe34,#50b175, #1aa1ee, #0a58d1, #ac52ec); 
+  	-webkit-background-clip: text;
+  	background-clip: text;
+  	color: transparent;
+}
+.demo-button {
+	padding: 1em 1.5em;
+	border-radius: 2em;
+	background-color: #1a1b20;
+	color: white;
+	border-width: 0;
+	font-weight: 500;
+	font-family: 'Plus Jakarta Sans';
+
+}
+.platform-button {
+	background-color: transparent;
+	border-width: 0;
+	font-weight: 500;
+	font-family: 'Plus Jakarta Sans';
+	color: #1a1b20;
+	padding: 1em;
+}
+#header-logo {
+	width: 3em;
+}
+#nexus-screenshot {
+	width: 100%;
+	border-radius: 25px;
+	border: 2px solid gray;
+	top: 50em;
+}
+h1 {
+	font-family: 'Plus Jakarta Sans';
+	font-weight: 500;
+}
+p {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 400;
+
+}
+@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+  	.hero-graph {
+		display: none !important;
+  	}
+  	.hero > .container > h1 {
+		font-size: 2.5em;
+	}
 }
