@@ -1,5 +1,6 @@
 # Strata
-implementacio educacional de la [imatge de la pagina de estrata](ref/strata_escriptori1440.png)
+implementacio educacional de la imatge de la pagina de estrata
+dada por el profesor.
 
 ## Index
 - [Llicència i Referència](###Llicència_i_Referència)
