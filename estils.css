@@ -5,8 +5,10 @@
     --iltacon-text: #9B9C9E;
     --iltacon-border: #D5D5D3;
 }
-main,.conteiner {
-	padding: 4em;
+section {
+	margin: auto;
+	width: 80%;
+	padding: 5em 0;
 }
 nav {
     display: flex;
@@ -223,6 +225,8 @@ p {
 
 }
 #light-gradient-background {
+	margin: 0;
+	width: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
