@@ -125,7 +125,7 @@ body {
 	}
 }
 .gradient-text {
-	background: linear-gradient(to right, #acbe34,#50b175, #1aa1ee, #0a58d1, #ac52ec); 
+	background: linear-gradient(to right,#50b175, #1aa1ee, #0a58d1, #ac52ec); 
   	-webkit-background-clip: text;
   	background-clip: text;
   	color: transparent;
@@ -222,6 +222,97 @@ p {
 	font-weight: 400;
 
 }
+#light-gradient-background {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #d1f8e0;
+	text-align: center;
+	p {
+		width: 75%;
+	}
+	.black-medium-text {
+		width: 35%;
+	}
+	padding: 2em 0;
+}
+.grey-medium-txt {
+	color: #4c4b47;
+}
+.grey-small-text {
+	color: #9c9da2;
+	font-size: 0.75em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 500;
+}
+.black-medium-text {
+	color: #1a1b20;
+}
+.gradient-line-with-text {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+	gap: 0.5em;
+	
+}
+.gradient-line {
+	background: linear-gradient(to right,#50b175, #1aa1ee, #1aa1ee, #0a58d1); 
+	height: 0.5em;
+	width: 1.75em;
+	border-radius: 2px;
+}
+.gradient-line-small {
+	background: linear-gradient(to right,#50b175, #1aa1ee, #1aa1ee, #0a58d1); 
+	height: 0.2em;
+	width: 0.75em;
+	border-radius: 15px;
+}
+#operational-block {
+	display: flex;
+	flex-direction: column;
+	border-radius: 25px;
+	border: grey solid 1px;
+	padding: 1em 2em;
+	hr {
+		color: #9c9da2;
+		width: 100%;
+	}
+	width: fit-content;
+}
+#operational-texts-div {
+	display: flex;
+	justify-content: space-between;
+}
+#operational-sections {
+	display: flex;
+	flex-direction: row;
+	gap: 2em;
+	div > h1 {
+		font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		color: #2d2c34;
+		font-size: 5em;
+		margin: 0;
+		font-weight: 400;
+		span {
+			color: grey;
+			font-family: 'Plus Jakarta Sans';
+			font-weight: 300;
+		}
+		#operational-shrink {
+			font-size: 50%;
+		}
+	}
+	div > p > .operational-tags {
+		background-color: rgb(185, 229, 237);
+		border: grey solid 2px;
+		padding: 0 0.4em;
+		border-radius: 25px;
+		color: #2d2c34;
+		text-wrap: nowrap; /*prevent the tag of cutting*/
+	}
+
+}
 @media (max-width: 767px), (prefers-reduced-motion: reduce) {
   	.hero-graph {
 		display: none !important;
@@ -234,5 +325,12 @@ p {
 	}
 	#iltacon {
 		display: none;
+	}
+	#operational-sections {
+		flex-direction: column;
+		gap: 0.5em;
+		div > h1 {
+			font-size: 3em;
+		}
 	}
 }
