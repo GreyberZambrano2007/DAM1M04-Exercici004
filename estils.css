@@ -5,13 +5,16 @@
     --iltacon-text: #9B9C9E;
     --iltacon-border: #D5D5D3;
 }
+main,.conteiner {
+	padding: 4em;
+}
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 	align-items: center;
     margin: 0;
-    padding: 0.5em 0;
+    padding: 1rem;
     color: var(--nav-white);
     border-bottom: 0.1rem solid var(--iltacon-border); 
     height: 2.1em;
@@ -19,7 +22,8 @@ nav {
 nav > img {
     width: 5em;
     height: 1rem;
-    padding-left: 5%;
+    margin: 0;
+    padding: 0;
 }
 #menu > a {
     text-decoration: none;
@@ -45,12 +49,6 @@ nav > img {
 }
 #dot-ilitacon{
     color: #B6588C; 
-}
-#demo{
-    background-color: var(--nav-demo);
-    color: var(--nav-white-demo);
-    border-style: solid;
-    border-radius: 1rem;
 }
 footer {
 	display: flex;
@@ -106,7 +104,6 @@ body {
 }
 
 .hero > .container {
-	
 	width: 90%;
 	margin: auto;
 	padding-top: 4em;
@@ -160,6 +157,62 @@ body {
 	border: 2px solid gray;
 	top: 50em;
 }
+.three-surfaces {
+    display: flex;
+    flex-flow: row;
+    gap: 2em;
+}
+.three-surfaces div span {
+    font-weight: 700;
+}
+.three-surfaces div h1 {
+    font-weight: 200;
+}
+.three-surfaces div p {
+    font-weight: 200;
+}
+.three-surfaces div {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    width: 50%;
+    padding-left : 2rem;
+    border: 1px solid gray;
+}
+.three-surfaces #atlas-surface {
+    background-color: lightgreen;
+}
+.three-surfaces #nexus-surface {
+    background-color: lightblue;
+}
+.three-surfaces #canvas-surface {
+    background-color: lightpink;
+}
+.core-section {
+    display: flex;
+    flex-flow: row;
+    align-items: left;
+    border: 1px solid gray;
+    gap: 1em;
+    background-color: lightgray;
+    font-size: 1rem;
+    height: 15%;
+}
+.core-section h1 {
+    padding: 2.5rem;
+    width: 50%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 200;
+}
+.core-section h1 span {
+    font-weight: 700;
+}
+.core-section p {
+    text-align: left;
+    padding-top: 2.3rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+}
+/* General and mobile*/
 h1 {
 	font-family: 'Plus Jakarta Sans';
 	font-weight: 500;
