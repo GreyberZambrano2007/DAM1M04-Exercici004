@@ -1,3 +1,57 @@
+:root {
+    --nav-white: #FBFBF9;
+    --nav-white-demo: #D9DADE;
+    --nav-demo: #191A1B;
+    --iltacon-text: #9B9C9E;
+    --iltacon-border: #D5D5D3;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    color: var(--nav-white);
+    border-bottom: 0.1rem solid var(--iltacon-border); 
+    height: 2.1em;
+}
+nav > img {
+    width: 5em;
+    height: 1rem;
+    padding-left: 5%;
+}
+#menu > a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: grey;
+    padding: 0.4rem;
+    width: 50%;
+}
+#menu {
+    padding-left : 10%;
+    padding-right: 5%;
+}
+#button {
+    width: 20rem;
+    padding: 0;
+    margin: 0;
+}
+#iltacon{
+    background-color: transparent;
+    color: var(--iltacon-text);
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: var(--iltacon-border);
+}
+#dot-ilitacon{
+    color: #B6588C; 
+}
+#demo{
+    background-color: var(--nav-demo);
+    color: var(--nav-white-demo);
+    border-style: solid;
+    border-radius: 1rem;
+}
 footer {
 	display: flex;
 	flex-flow: row;
@@ -122,57 +176,4 @@ p {
   	.hero > .container > h1 {
 		font-size: 2.5em;
 	}
-}:root {
-    --nav-white: #FBFBF9;
-    --nav-white-demo: #D9DADE;
-    --nav-demo: #191A1B;
-    --iltacon-text: #9B9C9E;
-    --iltacon-border: #D5D5D3;
-}
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    color: var(--nav-white);
-    border-bottom: 0.1rem solid var(--iltacon-border); 
-    height: 2.1em;
-}
-nav > img {
-    width: 5em;
-    height: 1rem;
-    padding-left: 5%;
-}
-#menu > a {
-    text-decoration: none;
-    font-size: 0.8rem;
-    color: grey;
-    padding: 0.4rem;
-    width: 50%;
-}
-#menu {
-    padding-left : 10%;
-    padding-right: 5%;
-}
-#button {
-    width: 20rem;
-    padding: 0;
-    margin: 0;
-}
-#iltacon{
-    background-color: transparent;
-    color: var(--iltacon-text);
-    border-style: solid;
-    border-radius: 1rem;
-    border-color: var(--iltacon-border);
-}
-#dot-ilitacon{
-    color: #B6588C; 
-}
-#demo{
-    background-color: var(--nav-demo);
-    color: var(--nav-white-demo);
-    border-style: solid;
-    border-radius: 1rem;
 }
