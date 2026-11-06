@@ -241,7 +241,7 @@ p {
 	}
 	padding: 2em 0;
 }
-.grey-medium-txt {
+.grey-medium-text {
 	color: #4c4b47;
 }
 .grey-small-text {
@@ -249,6 +249,10 @@ p {
 	font-size: 0.75em;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-weight: 500;
+}
+.small-mono-font {
+	font-family: 'JetBrains Mono';
+	font-weight: 200;
 }
 .black-medium-text {
 	color: #1a1b20;
@@ -266,12 +270,17 @@ p {
 	height: 0.5em;
 	width: 1.75em;
 	border-radius: 2px;
+	
 }
 .gradient-line-small {
 	background: linear-gradient(to right,#50b175, #1aa1ee, #1aa1ee, #0a58d1); 
 	height: 0.2em;
 	width: 0.75em;
 	border-radius: 15px;
+}
+.center-diff-bg {
+	width: 80%;
+	margin: auto;
 }
 #operational-block {
 	display: flex;
@@ -318,6 +327,67 @@ p {
 	}
 
 }
+#field-section {
+	margin: 0;
+	width: auto;
+	background: black; 
+	#field-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 2.5em ;
+		div {
+			width: 60%;
+			h1 {
+				color: white;
+				font-size: 6em;
+				margin: 0;
+			}
+			.grey-text-dark {
+				color: #adaeb3;
+				padding-bottom: 3em;
+				border-bottom: 1px solid #2a2a2c;
+			}
+		}
+		table {
+			backdrop-filter: blur(5px) saturate(200%);
+			background-color: #7575752e;
+			border-collapse: collapse;
+			height: fit-content;
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-items: center;
+			border: 2px solid #2a2a2c;
+			border-radius: 20px;
+			
+			padding: 1em;
+			caption {
+				text-align: left;
+				padding-bottom: 1em;
+			}
+			tr {
+				display: flex;
+				justify-content: space-between;
+				td {
+					padding: 1em;
+					border-top: 1px solid #2a2a2c;
+					width: 50%;
+				}
+				.field-table-values {
+					font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+					color: white;
+					font-size: 1.5em;
+					padding: 0;
+					font-weight: 200;
+					text-align: right;
+				}
+			}
+		}
+	}
+	
+}
+
 .workflows-section {
 	display: flex;
 	flex-direction: column;
@@ -393,6 +463,15 @@ p {
 		gap: 0.5em;
 		div > h1 {
 			font-size: 3em;
+		}
+	}
+	#field-section > div > #field-container {
+		flex-direction: column;
+		div {
+			width: 100%;
+		}
+		table {
+			width: 100%;
 		}
 	}
 }
