@@ -194,9 +194,10 @@ body {
     align-items: left;
     border: 1px solid gray;
     gap: 1em;
+	margin:0;
     background-color: lightgray;
-    font-size: 1rem;
-    height: 15%;
+    font-size: 0.7rem;
+    height: 25%;
 }
 .core-section h1 {
     padding: 2.5rem;
@@ -316,6 +317,63 @@ p {
 		text-wrap: nowrap; /*prevent the tag of cutting*/
 	}
 
+}
+.workflows-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*individual per div*/
+.workflows-section > div span {
+	border: 0.1em solid orange;
+	background-color: rgba(255, 201, 100,0.5);
+	color: orange; 
+	font-weight: 700;
+	text-align: left;
+	width:  max-content;
+	height: 20%;
+	margin: 0.5em;
+	font-size    : 0.2em;
+	padding      : 0.5rem;
+	padding-left : 0.5rem;
+	border-radius: 1.5rem;
+	text-wrap    : nowrap;
+}
+.workflows-section > div div {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size   : 0.5rem;
+	padding-left: 5rem;
+}
+.workflows-section > div h1 {
+	margin: 0;
+}
+/*General*/
+.workflows-section > div:nth-child(n+2) {
+	display: flex;
+	flex-direction: row;
+	align-items: left;
+	justify-content: space-between;
+	background-color: var(--nav-white-demo);
+	border-top: 0.1rem solid black;
+	background-color: #f5f5f5;
+	padding-top: 1rem;
+}
+.workflows-section > div:nth-last-child(1) {
+	border-bottom: 0.1rem solid black;
+}
+.workflows-section > div:nth-last-child(1) div {
+	padding-left: 2.5rem;
+}
+.workflows-section > div:nth-child(3) {
+	background-color: lightgray;
+	padding-left: 2.5rem;
+}
+.workflows-section > div:nth-child(3) span {
+	width : max-content;
+	height: 50%;
+}
+.workflows-section > div:nth-child(3) div {
+	padding-left: 6.7rem;
 }
 @media (max-width: 767px), (prefers-reduced-motion: reduce) {
   	.hero-graph {
