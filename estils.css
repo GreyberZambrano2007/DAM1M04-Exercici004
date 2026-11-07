@@ -150,7 +150,7 @@ body {
 	margin-bottom: 0;
 }
 .gradient-text {
-	background: linear-gradient(to right, #50b175, #1aa1ee, #0a58d1, #ac52ec);
+	background: linear-gradient(to right, #50b175, #549FD7, #8C3CC5);
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
@@ -322,7 +322,7 @@ p {
 }
 
 .gradient-line {
-	background: linear-gradient(to right, #50b175, #1aa1ee, #1aa1ee, #0a58d1);
+	background: linear-gradient(to right, #50b175, #549FD7);
 	height: 0.5em;
 	width: 1.75em;
 	border-radius: 2px;
@@ -330,7 +330,7 @@ p {
 }
 
 .gradient-line-small {
-	background: linear-gradient(to right, #50b175, #1aa1ee, #1aa1ee, #0a58d1);
+	background: linear-gradient(to right, #50b175, #549FD7);
 	height: 0.2em;
 	width: 0.75em;
 	border-radius: 15px;
