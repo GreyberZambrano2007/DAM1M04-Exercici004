@@ -106,8 +106,6 @@ body {
 	p {
 		font-size: 1.6em;
 	}
-
-
 	.button-bottom-gap {
 		padding-bottom: 6em;
 	}
@@ -123,7 +121,6 @@ body {
 	background-clip: text;
 	color: transparent;
 }
-
 .demo-button {
 	padding: 0.75em 1em;
 	border-radius: 2em;
@@ -197,16 +194,16 @@ body {
 	flex-flow: row;
 	align-items: left;
 	border: 1px solid gray;
-	gap: 1em;
 	margin: 0;
 	background-color: lightgray;
 	font-size: 0.7rem;
 	height: 25%;
+	align-items: center;
 }
 
 .core-section h1 {
 	padding: 2.5rem;
-	width: 50%;
+	width: 30%;
 	font-family: 'Plus Jakarta Sans', sans-serif;
 	font-weight: 200;
 }
@@ -216,8 +213,9 @@ body {
 }
 
 .core-section p {
-	text-align: left;
-	padding-top: 2.3rem;
+	margin:0;
+	text-align: center;
+	text-wrap: wrap;
 	font-family: 'Plus Jakarta Sans', sans-serif;
 	font-weight: 200;
 	font-size: 1rem;
@@ -716,7 +714,32 @@ footer {
 	#iltacon {
 		display: none;
 	}
-
+	.three-surfaces{
+		flex-direction: column;
+	}
+	#platform-section {
+		flex-direction: column;
+		div {
+			font-size: 0.7rem;
+			width  : 100%;
+			padding: 0;
+		}
+	}	
+	.core-section{
+		flex-direction: column;
+		align-content: left;
+		height: inherit;
+		h1 {
+			width: fit-content;
+			width  : 100%;
+			padding: 0;
+		}
+		p {
+			font-size: 0.7rem;
+			width  : 100%;
+			padding: 0;
+		}
+	}
 	#operational-sections {
 		flex-direction: column;
 		gap: 0.5em;
@@ -725,7 +748,6 @@ footer {
 			font-size: 3em;
 		}
 	}
-
 	#field-section>div>#field-container {
 		flex-direction: column;
 
