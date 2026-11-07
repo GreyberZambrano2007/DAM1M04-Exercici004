@@ -5,24 +5,32 @@
 	--iltacon-text: #9B9C9E;
 	--iltacon-border: #D5D5D3;
 }
-section,footer,nav,.container {
+.center-diff-bg {
+	width: 80%;
+	margin: auto;
+}
+section,footer {
 	margin: auto;
 	width: 80%;
 	padding: 5em 0;
 }
 nav {
+	padding: 0;
+	width: 100%;
+	border-bottom: 0.1rem solid var(--iltacon-border);
+}
+nav > .center-diff-bg{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	margin: 0;
-	padding: 1rem;
+	padding: 1rem 0;
 	color: var(--nav-white);
-	border-bottom: 0.1rem solid var(--iltacon-border);
+	
 	height: 2.1em;
 }
 
-nav>img {
+nav > .center-diff-bg >img {
 	width: 5em;
 	height: 1rem;
 	margin: 0;
@@ -36,12 +44,6 @@ nav>img {
 	padding: 0.4rem;
 	width: 50%;
 }
-
-#menu {
-	padding-left: 10%;
-	padding-right: 5%;
-}
-
 #button {
 	padding: 0;
 	margin: 0;
@@ -91,7 +93,7 @@ body {
 }
 
 .hero>.container {
-	width: 90%;
+	width: 80%;
 	margin: auto;
 	padding-top: 4em;
 	position: relative;
@@ -302,10 +304,7 @@ p {
 	border-radius: 15px;
 }
 
-.center-diff-bg {
-	width: 80%;
-	margin: auto;
-}
+
 
 #operational-block {
 	display: flex;
@@ -668,30 +667,36 @@ p {
 	padding: 0;
 }
 footer {
-	display        : flex;
-	flex-flow      : row;
-	justify-content: space-between;
-	align-items    : center;
-	img {
-		height: 1em;
-		filter: invert();
-	}
+	width: auto;
+	margin: 0;
 	background-color: #16171C;
-	color: #9c9da2;
-	div {
-		display: flex;
-		flex-flow: row;
+	padding: 0;
+	.center-diff-bg {
+		display        : flex;
+		flex-flow      : row;
 		justify-content: space-between;
-		gap: 2em;
-		a {
-			color: #9c9da2;
-			text-decoration: none;
+		align-items    : center;
+		img {
+			height: 1em;
+			filter: invert();
 		}
+		
+		color: #9c9da2;
+		div {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+			gap: 2em;
+			a {
+				color: #9c9da2;
+				text-decoration: none;
+			}
+		}
+		padding: 1.5em 0;
+		font-family: 'Plus Jakarta Sans',
+		sans-serif;
+		font-weight: 400;
 	}
-	padding: 1.5em 0;
-	font-family: 'Plus Jakarta Sans',
-	sans-serif;
-	font-weight: 400;
 }
 @media (max-width: 767px), (prefers-reduced-motion: reduce) {
   	.hero-graph {
