@@ -131,7 +131,6 @@ body {
 	position: relative;
 	z-index: 1;
 
-	h1,
 	p {
 		width: 80%;
 	}
@@ -140,16 +139,16 @@ body {
 		font-size: 1.6em;
 	}
 
-	h1 {
-		font-size: 6em;
-		margin-bottom: 0;
-	}
 
 	.button-bottom-gap {
 		padding-bottom: 6em;
 	}
 }
-
+.big-title {
+	width: 80%;
+	font-size: 6em;
+	margin-bottom: 0;
+}
 .gradient-text {
 	background: linear-gradient(to right, #50b175, #1aa1ee, #0a58d1, #ac52ec);
 	-webkit-background-clip: text;
@@ -550,15 +549,86 @@ p {
 		text-wrap: wrap;
 	}
 }
+
+#governance-blocks {
+	display: flex;
+	justify-content: space-between;
+	.governance-line {
+		width: 0.75em;
+		height: 3px;
+		background-color: black;
+		border-radius: 4px;
+	}
+	
+	#blue {
+		border-top-color: #549FD7;
+		.governance-line {
+			background-color: #549FD7;
+		}
+	}
+	#green {
+		border-top-color: #72AB79;
+		.governance-line {
+			background-color: #72AB79;
+		}
+	}
+	#purple {
+		border-top-color: #8C3CC5;
+		.governance-line {
+			background-color: #8C3CC5;
+		}
+	}
+	#yellow {
+		border-top-color: #E5C85E;
+	}
+}
+
+#governace-timeline {
+	display: flex;
+	
+	div {
+		width: 80%;
+		.grey-medium-text {
+			position: relative;
+			background-color: #FBFBF9;
+			width: min-content;
+			padding-right: 0.5em;
+			padding-left: 0.5em;
+		}
+	}
+}
+#line {
+	position: relative;
+	bottom: -1.75em;
+	z-index: -1;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to right, #E5C85E, #50b175, #549FD7, #8C3CC5, #FBFBF9);
+}
+#governance-benefits {
+	text-align: center;
+	span {
+		text-wrap: nowrap;
+		padding: 0 1em;
+	}
+}
+#governance-blocks > div {
+	border: #F0F0EE solid 2px;
+	border-top-width: 4px;
+	border-radius: 10px;
+	padding: 2em;
+	width: 20%;
+	p {
+		width: 75%;
+	}
+}
 @media (max-width: 767px), (prefers-reduced-motion: reduce) {
   	.hero-graph {
 		display: none !important;
 	}
-
-	.hero>.container>h1 {
+	.big-title {
 		font-size: 2.5em;
 	}
-
 	#menu>a {
 		display: none;
 	}
@@ -589,5 +659,31 @@ p {
 	}
 	.workflows-section div:first-child > p {
 		width: 100%;
+	}
+	#governance-blocks {
+		flex-direction: column;
+		gap: 1em;
+	}
+	#governance-blocks > div {
+		width: 100%;
+	}
+	#governace-timeline {
+		flex-direction: column;
+		div {
+			padding-left: 4em;
+			.grey-medium-text {
+				left: -4em;
+			}
+			
+		}
+	}
+	#line {
+		float: left;
+		position: relative;
+		z-index: -1;
+		left: 1.2em;
+		width: 2px;
+		height: 45%;
+		background: linear-gradient(to bottom, #E5C85E, #50b175, #549FD7, #8C3CC5);
 	}
 }
