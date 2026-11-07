@@ -547,6 +547,69 @@ p {
 		font-size: 1.2em;
 		text-wrap: wrap;
 	}
+} .strata-search-section {
+	display: flex;
+	flex-direction: row;
+	gap: 2.6rem;
+	#form-box {
+	  width: 40%;
+	  #box-input {
+		display: flex;
+		justify-content: space-between;
+		#set-input {
+			border: none;
+			width: 50%;
+		}
+		 #set-search {
+			background-color: black;
+			color: white;
+		 	border-radius: 0.45rem;
+		 }		
+		 border: 0.1rem solid rgb(154, 153, 153);
+		 padding: 0.5rem;
+		 box-shadow: 0rem 0rem 0.5rem black;
+		 border-radius: 1rem;
+	  }
+	}
+	#edit-nodes  {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		.node {
+		  display: flex;
+		  gap: 1rem;
+		  div {
+		  	border: 0.1rem solid gray;
+			border-radius: 1rem;
+			padding: 1rem;
+			width: 30%;
+		  }
+			p:nth-child(3){
+			   padding-left: 1rem;
+			   a{
+			   font-size: 1rem;
+			   }
+			   color: green;
+			   font-size: 1rem;
+			}
+			p:nth-child(1){
+				padding:0;
+				display: flex;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+				width: 70%;
+			}
+			p {
+				a {
+					color: green;
+					font-size: 2rem;
+					font-weight: 700;
+					padding-right: 0.5rem;
+				}
+			}
+		}
+	}
 }
 @media (max-width: 767px), (prefers-reduced-motion: reduce) {
   	.hero-graph {

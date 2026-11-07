@@ -273,28 +273,31 @@
                 and correct what it gets wrong.
             </p>
         </section>
-        <section>
-            <form action="">
+        <section class="strata-search-section">
+            <form id="form-box" action="">
                 <label for="search-input"><img src="./assets/img/search.svg" alt=""></label>
-                <input type="search" id="search-input" placeholder="Ask anything about how your firm operates.">
-                <input type="submit" value="Ask">
+                <div id="box-input">
+                    <img src="./assets/img/search.svg" alt="search-input-box-svg">
+                    <input id="set-input" type="search" placeholder="Ask anything about how your firm operates.">
+                    <input id="set-search" type="submit" value="Ask">
+                </div>
             </form>
-            <div>
-                <p>EDITABLE NODES</p>
-                <div>
+            <div id="edit-nodes">
+                <p class="grey-small-text">EDITABLE NODES</p>
+                <div class="node">
                     <div>
-                        <p>FEE WRITE-OFF APPROVAL</p>
+                        <p><a class="dot-node">•</a>FEE WRITE-OFF APPROVAL</p>
                         <p>
                             Write-offs over $5,000 route to the Managing Partner for sign-off.
                         </p>
-                        <p>Confirmed by your firm</p>
+                        <p><a>✓</a>Confirmed by your firm</p>
                     </div>
                     <div>
-                        <p>CLIENT INTAKE GATE</p>
+                        <p><a class="dot-node">•</a>CLIENT INTAKE GATE</p>
                         <p>
                             Conflicts must clear and billing guidelines attach before a matter opens.
                         </p>
-                        <p>Confirmed by your firm</p>
+                        <p><a>✓</a>Confirmed by your firm</p>
                     </div>
                 </div>
             </div>
