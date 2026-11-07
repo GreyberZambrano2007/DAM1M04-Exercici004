@@ -361,7 +361,7 @@ p {
 #field-section {
 	margin: 0;
 	width: auto;
-	background: black;
+	background-image: linear-gradient(to left bottom, #19a1efa4 -50%,  rgba(0, 0, 0, 0.117) 40%), radial-gradient(closest-side at 75% 25%, #182f1f, black 200%);
 
 	#field-container {
 		display: flex;
@@ -653,7 +653,7 @@ p {
 #get-started-section {
 	margin: 0;
 	width: auto;
-	background-color: #F4F3EE;
+	background: linear-gradient(120deg, #69C9FF -50%, #F0F0E6 20% 80%, #F189AB 150%);
 }
 #get-started-blocks {
 	display: flex;
