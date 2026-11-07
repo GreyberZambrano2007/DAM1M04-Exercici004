@@ -96,6 +96,7 @@ footer {
 
 body {
 	margin: 0;
+	background-color: #FBFBF9;
 }
 
 .hero {
@@ -471,8 +472,9 @@ p {
 .workflows-section {
 	display: flex;
 	flex-direction: column;
-	margin: auto;
-	
+	margin: 0;
+	width: auto;
+	background-color: #F5F6F0;
 	.workflow-frames {
 		display: flex;
 		flex-direction: row;
