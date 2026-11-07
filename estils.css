@@ -499,8 +499,6 @@ p {
 			margin-top: 1em;
 		}
 	}
-	
-	
 }
 .workflows-section div:first-child > p {
 	width: 60%;
@@ -514,6 +512,9 @@ p {
 	}	
 	div {
 		padding-top: 4rem;
+	}
+	.gradient-line {
+		padding:0;
 	}
 	.atlas-info {
 		display: flex;
