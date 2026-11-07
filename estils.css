@@ -622,6 +622,26 @@ p {
 		width: 75%;
 	}
 }
+#get-started-section {
+	margin: 0;
+	width: auto;
+	background-color: #F4F3EE;
+}
+#get-started-blocks {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5em;
+	border-top: #E5E5DB solid 1px;
+	padding-top: 2em;
+}
+#get-started-blocks > div {
+	border-left: #E5E5DB solid 1px;
+	padding: 1em;
+}
+#get-started-blocks > div:first-child {
+	border-left: none;
+	padding: 0;
+}
 @media (max-width: 767px), (prefers-reduced-motion: reduce) {
   	.hero-graph {
 		display: none !important;
@@ -679,11 +699,22 @@ p {
 	}
 	#line {
 		float: left;
-		position: relative;
 		z-index: -1;
 		left: 1.2em;
 		width: 2px;
 		height: 45%;
 		background: linear-gradient(to bottom, #E5C85E, #50b175, #549FD7, #8C3CC5);
+	}
+	#get-started-blocks {
+		flex-direction: column;
+		border-top: none;
+	}
+	#get-started-blocks > div {
+		border-left: none;
+		border-top: #E5E5DB solid 1px;
+		padding: 1em 0;
+	}
+	#get-started-blocks > div:first-child {
+		padding: 1em 0;
 	}
 }
