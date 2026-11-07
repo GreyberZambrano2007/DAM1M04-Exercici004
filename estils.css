@@ -241,7 +241,6 @@ p {
 	align-items: center;
 	background-color: #d1f8e0;
 	text-align: center;
-
 	p {
 		width: 75%;
 	}
@@ -515,13 +514,14 @@ p {
 	flex-direction: row;
 	gap: 2.6rem;
 	#form-box {
-	  width: 40%;
+	  width: 50%;
+	  padding: 1rm;
 	  #box-input {
 		display: flex;
-		justify-content: space-between;
 		#set-input {
+			padding-left: 0.5rem;
 			border: none;
-			width: 50%;
+			width: 100%;
 		}
 		 #set-search {
 			background-color: black;
@@ -538,9 +538,13 @@ p {
 		display: flex;
 		flex-direction: column;
 		width: 50%;
+		#title-node {
+			margin: 0;
+		}
 		.node {
 		  display: flex;
 		  gap: 1rem;
+		  padding-top: 1rem;
 		  div {
 		  	border: 0.1rem solid gray;
 			border-radius: 1rem;
