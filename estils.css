@@ -242,7 +242,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #d1f8e0;
+	background: linear-gradient(25deg, #52B272 -90%, #F1F2EC 20% 80%, #19A1EF 190%);
 	text-align: center;
 	p {
 		width: 75%;
@@ -305,12 +305,16 @@ p {
 }
 
 
-
 #operational-block {
+	background: linear-gradient(to right bottom, #50b175, #549FD7);
+	padding: 1px;
+	border-radius: 27px;
+}
+#operational-block > div {
+	background-color: #FBFBF9;
 	display: flex;
 	flex-direction: column;
 	border-radius: 25px;
-	border: grey solid 1px;
 	padding: 1em 2em;
 	hr {
 		color: #9c9da2;
@@ -346,8 +350,8 @@ p {
 	}
 
 	div>p>.operational-tags {
-		background-color: rgb(185, 229, 237);
-		border: grey solid 2px;
+		background: linear-gradient(to right, #50b1752e, #509ed744);;
+		border: rgba(128, 128, 128, 0.275) solid 1px;
 		padding: 0 0.4em;
 		border-radius: 25px;
 		color: #2d2c34;
@@ -385,19 +389,28 @@ p {
 				border-bottom: 1px solid #2a2a2c;
 			}
 		}
-
-		table {
+		#field-table {
 			backdrop-filter: blur(5px) saturate(200%);
 			background-color: #7575752e;
+			border: 1px solid #2a2a2c;
+			border-radius: 20px;
+			overflow: hidden;
+			width: 50%;
+			#gradient-border-line {
+				position: relative;
+				height: 2px;
+				width: 100%;
+				background: linear-gradient(to right, #F5C800, #50b175, #549FD7, #8C3CC5);;
+				box-sizing: content-box;
+			}
+		}
+		table {
 			border-collapse: collapse;
 			height: fit-content;
-			width: 50%;
+			
 			display: flex;
 			flex-direction: column;
 			justify-items: center;
-			border: 2px solid #2a2a2c;
-			border-radius: 20px;
-
 			padding: 1em;
 
 			caption {
