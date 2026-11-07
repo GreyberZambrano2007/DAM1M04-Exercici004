@@ -164,6 +164,7 @@ body {
 			width: 50%;
 			padding-left: 2rem;
 			border: 1px solid gray;
+			border-color: rgba(128, 128, 128, 0.401);
 		}
 		div span {
 			font-weight: 700;
@@ -175,13 +176,13 @@ body {
 			font-weight: 200;
 		}
 		#atlas-surface {
-			background-color: lightgreen;
+			background: linear-gradient(to bottom, #ABD7AA -200%, transparent 40%);
 		}
 		#nexus-surface {
-			background-color: lightblue;
+			background: linear-gradient(to bottom, #73CBF1 -200%, transparent 40%);
 		}
 		#canvas-surface {
-			background-color: lightpink;
+			background: linear-gradient(to bottom, #B167F0 -200%, transparent 40%);
 		}
 	}
 	#shadow-z-core {
@@ -200,8 +201,8 @@ body {
 		display: flex;
 		flex-flow: row;
 		align-items: left;
-		order: 1px solid gray;
-		background-color: lightgray;
+		border: 1px solid rgba(128, 128, 128, 0.401);
+		background-color: rgba(211, 211, 211, 0.256);
 		font-size: 0.7rem;
 		height: 25%;
 		align-items: center;
@@ -309,6 +310,7 @@ p {
 	background: linear-gradient(to right bottom, #50b175, #549FD7);
 	padding: 1px;
 	border-radius: 27px;
+	width: fit-content;
 }
 #operational-block > div {
 	background-color: #FBFBF9;
