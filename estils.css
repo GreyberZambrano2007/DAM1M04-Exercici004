@@ -495,25 +495,26 @@ p {
 	flex-direction: row;
 	gap: 2.6rem;
 	#form-box {
-	  width: 50%;
-	  padding: 1rm;
-	  #box-input {
-		display: flex;
-		#set-input {
-			padding-left: 0.5rem;
-			border: none;
-			width: 100%;
-		}
-		 #set-search {
-			background-color: black;
-			color: white;
-		 	border-radius: 0.45rem;
-		 }		
-		 border: 0.1rem solid rgb(154, 153, 153);
-		 padding: 0.5rem;
-		 box-shadow: 0rem 0rem 0.5rem black;
-		 border-radius: 1rem;
-	  }
+	  	width: 60%;
+	  	#box-input {
+			display: flex;
+			#set-input {
+				padding-left: 0.5rem;
+				border: none;
+				width: 100%;
+				background-color: transparent;
+			}
+			#set-search {
+				background-color: black;
+				color: white;
+				border-radius: 10px;
+				padding: 0.75em 1em;
+			}		
+			border: 0.1rem solid rgb(154, 153, 153);
+			padding: 0.5rem 0.5rem;
+			box-shadow: 0rem 0rem 0.5rem grey;
+			border-radius: 10px;
+	  	}
 	}
 	#edit-nodes  {
 		display: flex;
@@ -523,39 +524,42 @@ p {
 			margin: 0;
 		}
 		.node {
-		  display: flex;
-		  gap: 1rem;
-		  padding-top: 1rem;
-		  div {
-		  	border: 0.1rem solid gray;
-			border-radius: 1rem;
-			padding: 1rem;
-			width: 30%;
-		  }
-			p:nth-child(3){
-			   padding-left: 1rem;
-			   a{
-			   font-size: 1rem;
-			   }
-			   color: green;
-			   font-size: 1rem;
-			}
-			p:nth-child(1){
-				padding:0;
-				display: flex;
-				text-align: center;
-				justify-content: center;
-				align-items: center;
-				width: 70%;
-			}
-			p {
-				a {
-					color: green;
-					font-size: 2rem;
-					font-weight: 700;
-					padding-right: 0.5rem;
+		  	display: flex;
+		  	gap: 1rem;
+		  	padding-top: 1rem;
+		  	> div {
+		  		border: 0.1rem solid gray;
+				border-radius: 1rem;
+				padding: 1rem;
+				width: 30%;
+				p:nth-child(3){
+			   		padding-left: 1rem;
+			   		a{
+			   			font-size: 1rem;
+			   		}
+			   		color: green;
+			   		font-size: 1rem;
+					
 				}
-			}
+				p:nth-child(3):before {
+					content: "✓";
+				}
+				.node-title {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					.dot-node {
+						margin: 0.5em;
+						width: 0.5em;
+						height: 0.5em;
+						background-color: green;
+						border-radius: 50%;
+					}
+					p {
+						width: 65%;
+					}
+				}
+		  	}
 		}
 	}
 }
@@ -595,7 +599,6 @@ p {
 
 #governace-timeline {
 	display: flex;
-	
 	div {
 		width: 80%;
 		.grey-medium-text {
@@ -737,11 +740,11 @@ footer {
 		}
 		#edit-nodes {
 			flex-direction: column;
-			width: max-content;
+			width: 100%;
 			.node {
 				flex-direction: column;
 				div {
-					width: 40%;
+					width: initial;
 				}
 			}
 		}
@@ -771,14 +774,12 @@ footer {
 	}
 	#field-section>div>#field-container {
 		flex-direction: column;
-
 		div {
 			width: 100%;
 		}
-
-		table {
-			width: 100%;
-		}
+	}
+	#field-section  #field-container > #field-table {
+		width: 100%;
 	}
 	.workflows-section div:first-child > p {
 		width: 100%;
@@ -788,7 +789,7 @@ footer {
 		gap: 1em;
 	}
 	#governance-blocks > div {
-		width: 100%;
+		width: initial;
 	}
 	#governace-timeline {
 		flex-direction: column;
@@ -805,7 +806,7 @@ footer {
 		z-index: -1;
 		left: 1.2em;
 		width: 2px;
-		height: 45%;
+		height: 60%;
 		background: linear-gradient(to bottom, #E5C85E, #50b175, #549FD7, #8C3CC5);
 	}
 	#get-started-blocks {
