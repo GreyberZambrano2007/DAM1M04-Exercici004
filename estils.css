@@ -5,6 +5,10 @@
 	--iltacon-text: #9B9C9E;
 	--iltacon-border: #D5D5D3;
 }
+body {
+	margin: 0;
+	background-color: #FBFBF9;
+}
 .center-diff-bg {
 	width: 80%;
 	margin: auto;
@@ -18,55 +22,45 @@ nav {
 	padding: 0;
 	width: 100%;
 	border-bottom: 0.1rem solid var(--iltacon-border);
+	.center-diff-bg {
+		img {
+			width: 5em;
+			height: 1rem;
+			margin: 0;
+			padding: 0;
+		}
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 0;
+		color: var(--nav-white);
+		height: 2.1em;
+	}
+	#button {
+		padding: 0;
+		margin: 0;
+		#iltacon {
+			#dot-ilitacon {
+				color: #B6588C;
+			}
+			background-color: transparent;
+			color: var(--iltacon-text);
+			border-style: solid;
+			border-radius: 1rem;
+			border-color: var(--iltacon-border);
+		}
+	}
+	#menu{
+		a {
+			text-decoration: none;
+			font-size: 0.8rem;
+			color: grey;
+			padding: 0.4rem;
+			width: 50%;
+		}
+	}
 }
-nav > .center-diff-bg{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 0;
-	color: var(--nav-white);
-	
-	height: 2.1em;
-}
-
-nav > .center-diff-bg >img {
-	width: 5em;
-	height: 1rem;
-	margin: 0;
-	padding: 0;
-}
-
-#menu>a {
-	text-decoration: none;
-	font-size: 0.8rem;
-	color: grey;
-	padding: 0.4rem;
-	width: 50%;
-}
-#button {
-	padding: 0;
-	margin: 0;
-}
-
-#iltacon {
-	background-color: transparent;
-	color: var(--iltacon-text);
-	border-style: solid;
-	border-radius: 1rem;
-	border-color: var(--iltacon-border);
-}
-
-#dot-ilitacon {
-	color: #B6588C;
-}
-
-
-body {
-	margin: 0;
-	background-color: #FBFBF9;
-}
-
 .hero {
 	position: relative;
 	isolation: isolate;
@@ -76,7 +70,6 @@ body {
 		radial-gradient(ellipse at 60% 0%, #fae6d1, transparent 55%),
 		#fbfbfa;
 }
-
 .hero-graph {
 	position: absolute;
 	inset: 0;
@@ -131,7 +124,6 @@ body {
 	font-family: 'Plus Jakarta Sans';
 
 }
-
 .platform-button {
 	background-color: transparent;
 	border-width: 0;
@@ -161,8 +153,8 @@ body {
 		gap: 2em;
 		div {
 			font-family: 'Plus Jakarta Sans', sans-serif;
-			width: 50%;
-			padding-left: 2rem;
+			padding: 1.5rem;
+			width: 25%;
 			border: 1px solid gray;
 			border-color: rgba(128, 128, 128, 0.401);
 		}
@@ -186,42 +178,45 @@ body {
 		}
 	}
 	#shadow-z-core {
-		display: flex;
+		display       : flex;
 		flex-direction: column;
-		margin-top: 2%;
-		margin-left: 5%;
-		border: 0.1rem dashed lightgray;
-		border-radius: 0.2rem;
-		height: 1rem;
-		border-bottom:0;
-		z-index: -1;
-		width: 92%;
+		margin-top    : 2%;
+		margin-left   : 5%;
+		border        : 0.1rem dashed lightgray;
+		border-radius : 0.2rem;
+		height        : 1rem;
+		border-bottom : 0;
+		z-index       : -1;
+		width         : 82%;
 	}	
 	.core-section {
 		display: flex;
 		flex-flow: row;
 		align-items: left;
-		border: 1px solid rgba(128, 128, 128, 0.401);
-		background-color: rgba(211, 211, 211, 0.256);
-		font-size: 0.7rem;
-		height: 25%;
-		align-items: center;
-		h1 {
+		font-size  : 0.7rem;
+		height     : 15%;
+		div {
+			display: flex;
+			flex-direction: row;
+			background-color: rgba(211, 211, 211, 0.256);
+			gap: 7rem;
+			width: 89%;
+			height : fit-content;
 			span {
-				font-weight: 700;
+			font-weight: 700;
 			}
-			padding: 2.5rem;
-			width: 30%;
+			h1 {
+				font-weight: 200;
+			}
+			p {
+				font-weight: 200;
+				font-size: 0.8rem;
+				width: 50%;
+			}
 			font-family: 'Plus Jakarta Sans', sans-serif;
-			font-weight: 200;
-		}
-		p {
-			margin:0;
-			text-align: center;
-			text-wrap: wrap;
-			font-family: 'Plus Jakarta Sans', sans-serif;
-			font-weight: 200;
-			font-size: 1rem;
+			padding: 1.5rem;
+			border: 1px solid gray;
+			border-color: rgba(128, 128, 128, 0.401);
 		}
 	}
 }
@@ -274,20 +269,17 @@ p {
 	font-family: 'JetBrains Mono';
 	font-weight: 200;
 }
-
 .black-medium-text {
 	color: #1a1b20;
 	font-size: 1em;
 	font-weight: 500;
 }
-
 .gradient-line-with-text {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: start;
 	gap: 0.5em;
-
 }
 
 .gradient-line {
@@ -369,13 +361,11 @@ p {
 	margin: 0;
 	width: auto;
 	background-image: linear-gradient(to left bottom, #19a1efa4 -50%,  rgba(0, 0, 0, 0.117) 40%), radial-gradient(closest-side at 75% 25%, #182f1f, black 200%);
-
 	#field-container {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		gap: 2.5em;
-
 		div {
 			width: 60%;
 
@@ -409,27 +399,22 @@ p {
 		table {
 			border-collapse: collapse;
 			height: fit-content;
-			
 			display: flex;
 			flex-direction: column;
 			justify-items: center;
 			padding: 1em;
-
 			caption {
 				text-align: left;
 				padding-bottom: 1em;
 			}
-
 			tr {
 				display: flex;
 				justify-content: space-between;
-
 				td {
 					padding: 1em;
 					border-top: 1px solid #2a2a2c;
 					width: 50%;
 				}
-
 				.field-table-values {
 					font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 					color: white;
@@ -441,7 +426,6 @@ p {
 			}
 		}
 	}
-
 }
 
 .workflows-section {
@@ -463,7 +447,6 @@ p {
 		div {
 			width: 80%;
 		}
-
 		span {
 			border: 1px solid #e0d3c2;
 			background-color: #f2ead7;
@@ -476,9 +459,11 @@ p {
 			margin-top: 1em;
 		}
 	}
-}
-.workflows-section div:first-child > p {
-	width: 60%;
+	div:first-child {
+		p  {
+			width: 60%;
+		}
+	}
 }
 .strata-atlas-section {
 	img {
@@ -524,7 +509,8 @@ p {
 		font-size: 1.2em;
 		text-wrap: wrap;
 	}
-} .strata-search-section {
+}
+.strata-search-section {
 	display: flex;
 	flex-direction: row;
 	gap: 2.6rem;
@@ -731,38 +717,82 @@ footer {
 	#iltacon {
 		display: none;
 	}
+	#operational-value-section {
+		.section-title-text {
+			font-size: 2rem;
+		}
+	}
+	.workflows-section {
+		.section-title-text {
+			font-size: 2rem;
+		}
+		.small-mono-font {
+			width: fit-content;
+			padding: 0;
+		}
+		.workflow-frames {
+			.black-medium-text {
+				font-size: 1.5rem;
+				font-weight: 700;
+			}
+			.grey-text {
+				width: 130%;
+			}
+			flex-direction: column;
+		}
+	}
 	#platform-section {
-		
 		.three-surfaces {
 			flex-direction: column;
 			div {
 				flex-direction: column;
-				font-size: 0.7rem;
-				width  : 100%;
-				padding: 0;
+				font-size     : 0.7rem;
+				width         : 80%;
+				padding       : 1.5rem;
 			}
 		}
 		.core-section {
+			display: flex;
 			flex-direction: column;
-			margin-top: 1.5rem;
-			align-content: left;
-			height: inherit;
-			h1 {
-				width: fit-content;
-				width  : 100%;
-				padding: 0;
-			}
-			p {
-				font-size: 0.7rem;
-				width  : 100%;
+			margin:0;
+			align-content : left;
+			width  : fit-content;
+			height : fit-content;
+			div {
+				flex-direction: column;
+				font-size     : 0.7rem;
+				width         : 80%;
 				padding: 0;
 			}
 		}
-	}	
+	}
+	.strata-atlas-section {
+		.atlas-info  {
+		flex-direction: column; 
+		}
+		#last-paragraph {
+		  width: 100%;
+		}
+	}
+	.strata-search-section {
+		flex-direction: column;
+		#form-box {
+		  width: 100%;
+		}
+		#edit-nodes {
+			flex-direction: column;
+			width: max-content;
+			.node {
+				flex-direction: column;
+				div {
+					width: 40%;
+				}
+			}
+		}
+	}
 	#operational-sections {
 		flex-direction: column;
 		gap: 0.5em;
-
 		div>h1 {
 			font-size: 3em;
 		}
