@@ -8,6 +8,7 @@
 body {
 	margin: 0;
 	background-color: #FBFBF9;
+	font-family: 'Plus Jakarta Sans';
 }
 .center-diff-bg {
 	width: 80%;
@@ -91,12 +92,8 @@ nav {
 	padding-top: 4em;
 	position: relative;
 	z-index: 1;
-
 	p {
 		width: 80%;
-	}
-
-	p {
 		font-size: 1.6em;
 	}
 	.button-bottom-gap {
@@ -121,27 +118,33 @@ nav {
 	color: white;
 	border-width: 0;
 	font-weight: 500;
-	font-family: 'Plus Jakarta Sans';
 
 }
 .platform-button {
 	background-color: transparent;
 	border-width: 0;
 	font-weight: 500;
-	font-family: 'Plus Jakarta Sans';
 	color: #1a1b20;
 	padding: 1em;
-}
 
+}
+.gradient-border-div {
+	background: linear-gradient(to right bottom, #50b175, #549FD7);
+	padding: 1px;
+	border-radius: 27px;
+}
 #header-logo {
 	width: 3em;
 }
 
 #nexus-screenshot {
-	width: 100%;
-	border-radius: 25px;
-	border: 2px solid gray;
-	top: 50em;
+	position: relative;
+	top: 5em;
+	box-shadow: 0px 25px 25px 2px #898D8E;
+	img {
+		width: 100%;
+		border-radius: 27px;
+	}
 }
 #platform-section {
 
@@ -149,7 +152,6 @@ nav {
 		border-radius: 15px;
 		border: 1px solid rgba(128, 128, 128, 0.401);
 		padding: 1em 1.5em;
-		
 		h1 > span {
 			color: #000;
 			font-weight: 700;
@@ -202,14 +204,10 @@ nav {
 }
 /* General and mobile*/
 h1 {
-	font-family: 'Plus Jakarta Sans';
 	font-weight: 500;
 }
-
 p {
-	font-family: 'Plus Jakarta Sans', sans-serif;
 	font-weight: 400;
-
 }
 
 #light-gradient-background {
@@ -279,22 +277,20 @@ p {
 
 
 #operational-block {
-	background: linear-gradient(to right bottom, #50b175, #549FD7);
-	padding: 1px;
-	border-radius: 27px;
+	box-shadow: 0px 6px 25px -8px rgb(180, 180, 180);
 	width: fit-content;
-}
-#operational-block > div {
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	border-radius: 25px;
-	padding: 1em 2em;
-	hr {
-		color: #9c9da2;
-		width: 100%;
+	> div {
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		border-radius: 25px;
+		padding: 1em 2em;
+		hr {
+			color: #9c9da2;
+			width: 100%;
+		}
+		width: inherit;
 	}
-	width: fit-content;
 }
 #operational-texts-div {
 	display: flex;
@@ -314,7 +310,6 @@ p {
 
 		span {
 			color: grey;
-			font-family: 'Plus Jakarta Sans';
 			font-weight: 300;
 		}
 
@@ -340,7 +335,8 @@ p {
 #field-section {
 	margin: 0;
 	width: auto;
-	background-image: linear-gradient(to left bottom, #19a1efa4 -50%,  rgba(0, 0, 0, 0.117) 40%), radial-gradient(closest-side at 75% 25%, #182f1f, black 200%);
+	background-image: linear-gradient(to left bottom, #19a1efa4 -50%,  rgba(0, 0, 0, 0.117) 40%), 
+	radial-gradient(closest-side at 75% 25%, #182f1f, black 175%);
 	#field-container {
 		display: flex;
 		flex-direction: row;
@@ -396,7 +392,7 @@ p {
 					width: 50%;
 				}
 				.field-table-values {
-					font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+					font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 					color: white;
 					font-size: 1.5em;
 					padding: 0;
@@ -419,8 +415,9 @@ p {
 		flex-direction: row;
 		align-items: left;
 		justify-content: space-between;
-		border-bottom: 1px solid black;
-		border-top: 1px solid black;
+		border-bottom: 1px solid;
+		border-top: 1px solid;
+		border-color: #E6E7E1;
 		padding-top: 1rem;
 		padding-bottom: 1em;
 		width: 100%;
@@ -439,10 +436,14 @@ p {
 			margin-top: 1em;
 		}
 	}
+	.workflow-frames:last-of-type {
+		border-bottom-width: 2px;
+	}
 	div:first-child {
 		p  {
 			width: 60%;
 		}
+		border-bottom: 1px solid #E6E7E1;
 	}
 }
 .strata-atlas-section {
@@ -465,17 +466,15 @@ p {
 		gap: 2.6rem;
 		div {
 			padding-top: 1rem;
-			border-top: 0.1rem solid black;
+			border-top: 2px solid black;
 			height: max-content;
 		}
 		h1 {
-			font-family: 'Plus Jakarta Sans', sans-serif;
 			font-weight: 700;
 			font-size: 1.5em;
 			margin: 0;
 		}
 		p {
-			font-family: 'Plus Jakarta Sans', sans-serif;
 			font-weight: 400;
 			font-size: 1.2em;
 			color: gray;
@@ -484,7 +483,6 @@ p {
 	#last-paragraph {
 		padding-top: 2.5rem;
 		width: 50%;
-		font-family: 'Plus Jakarta Sans', sans-serif;
 		font-weight: 400;
 		font-size: 1.2em;
 		text-wrap: wrap;
@@ -692,8 +690,6 @@ footer {
 			}
 		}
 		padding: 1.5em 0;
-		font-family: 'Plus Jakarta Sans',
-		sans-serif;
 		font-weight: 400;
 	}
 }
@@ -753,6 +749,7 @@ footer {
 			width: 100%;
 			.node {
 				flex-direction: column;
+				gap: 1em;
 				div {
 					width: initial;
 				}
