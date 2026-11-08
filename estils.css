@@ -807,7 +807,7 @@ footer {
 		z-index: -1;
 		left: 1.2em;
 		width: 2px;
-		height: 60%;
+		height: 106vw;
 		background: linear-gradient(to bottom, #E5C85E, #50b175, #549FD7, #8C3CC5);
 	}
 	#get-started-blocks {
