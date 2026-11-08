@@ -598,6 +598,7 @@ p {
 }
 
 #governace-timeline {
+	
 	display: flex;
 	div {
 		width: 80%;
@@ -607,6 +608,10 @@ p {
 			width: min-content;
 			padding-right: 0.5em;
 			padding-left: 0.5em;
+		}
+		
+		.grey-small-text {
+			margin: 0;
 		}
 	}
 }
@@ -619,6 +624,7 @@ p {
 	background: linear-gradient(to right, #E5C85E, #50b175, #549FD7, #8C3CC5, #FBFBF9);
 }
 #governance-benefits {
+	margin-top: 2em;
 	text-align: center;
 	span {
 		text-wrap: nowrap;
@@ -660,6 +666,8 @@ footer {
 	margin: 0;
 	background-color: #16171C;
 	padding: 0;
+	overflow: hidden;
+	
 	.center-diff-bg {
 		display        : flex;
 		flex-flow      : row;
@@ -674,7 +682,7 @@ footer {
 		div {
 			display: flex;
 			flex-flow: row;
-			justify-content: space-between;
+			justify-content: space-between;	
 			gap: 2em;
 			a {
 				color: #9c9da2;
@@ -807,7 +815,7 @@ footer {
 		z-index: -1;
 		left: 1.2em;
 		width: 2px;
-		height: 106vw;
+		height: 24rem;
 		background: linear-gradient(to bottom, #E5C85E, #50b175, #549FD7, #8C3CC5);
 	}
 	#get-started-blocks {
