@@ -239,7 +239,7 @@ p {
 }
 
 .grey-small-text {
-	color: #9c9da2;
+	color: #898D8E;
 	font-size: 0.75em;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-weight: 500;
@@ -285,7 +285,7 @@ p {
 	width: fit-content;
 }
 #operational-block > div {
-	background-color: #FBFBF9;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	border-radius: 25px;
@@ -303,7 +303,7 @@ p {
 #operational-sections {
 	display: flex;
 	flex-direction: row;
-	gap: 2em;
+	gap: 8em;
 
 	div>h1 {
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -493,9 +493,11 @@ p {
 .strata-search-section {
 	display: flex;
 	flex-direction: row;
-	gap: 2.6rem;
+	
+	justify-content: space-between;
+	padding-top: 0;
 	#form-box {
-	  	width: 60%;
+	  	width: 50%;
 	  	#box-input {
 			display: flex;
 			#set-input {
@@ -519,27 +521,27 @@ p {
 	#edit-nodes  {
 		display: flex;
 		flex-direction: column;
-		width: 50%;
+		
+		width: 35%;
 		#title-node {
 			margin: 0;
 		}
 		.node {
 		  	display: flex;
-		  	gap: 1rem;
+			justify-content: space-between;
+		  	
 		  	padding-top: 1rem;
+			
 		  	> div {
 		  		border: 0.1rem solid gray;
 				border-radius: 1rem;
 				padding: 1rem;
-				width: 30%;
+				width: 40%;
+				> p {
+					font-size: 1em;
+				}
 				p:nth-child(3){
-			   		padding-left: 1rem;
-			   		a{
-			   			font-size: 1rem;
-			   		}
-			   		color: green;
-			   		font-size: 1rem;
-					
+			   		color: #3D8A47;
 				}
 				p:nth-child(3):before {
 					content: "✓";
@@ -549,10 +551,10 @@ p {
 					flex-direction: row;
 					align-items: center;
 					.dot-node {
-						margin: 0.5em;
-						width: 0.5em;
-						height: 0.5em;
-						background-color: green;
+						margin-right: 0.5em;
+						width: 0.4em;
+						height: 0.4em;
+						background-color: #3D8A47;
 						border-radius: 50%;
 					}
 					p {
@@ -667,7 +669,7 @@ footer {
 	background-color: #16171C;
 	padding: 0;
 	overflow: hidden;
-	
+
 	.center-diff-bg {
 		display        : flex;
 		flex-flow      : row;
