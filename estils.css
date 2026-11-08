@@ -796,6 +796,7 @@ footer {
 		div {
 			padding-left: 4em;
 			.grey-medium-text {
+				color: #b2b2b1;
 				left: -4em;
 			}
 			
