@@ -10,6 +10,7 @@ body {
 	background-color: #FBFBF9;
 	font-family: 'Plus Jakarta Sans';
 }
+
 .center-diff-bg {
 	width: 80%;
 	margin: auto;
@@ -99,9 +100,12 @@ nav {
 		width: 80%;
 		font-size: 1.6em;
 	}
-	.button-bottom-gap {
-		padding-bottom: 6em;
-	}
+	
+}
+.button-bottom-gap {
+	display: flex;
+	align-items: center;
+	margin-bottom: 6em;
 }
 .big-title {
 	width: 80%;
@@ -136,7 +140,7 @@ nav {
 	color: #1a1b20;
 	margin: 1em;
 	text-decoration: none;
-
+	text-wrap: nowrap;
 }
 .platform-button:hover {
 	text-decoration: underline;
@@ -694,6 +698,7 @@ footer {
 	overflow: hidden;
 
 	.center-diff-bg {
+		
 		display        : flex;
 		flex-flow      : row;
 		justify-content: space-between;
@@ -734,6 +739,13 @@ footer {
 	#iltacon {
 		display: none;
 	}
+	#light-gradient-background {
+		.black-medium-text {
+			width: 80%;
+		}
+	}
+
+	.black-medium-text 
 	#operational-value-section {
 		.section-title-text {
 			font-size: 2rem;
