@@ -1,10 +1,3 @@
-:root {
-	--nav-white: #FBFBF9;
-	--nav-white-demo: #D9DADE;
-	--nav-demo: #191A1B;
-	--iltacon-text: #9B9C9E;
-	--iltacon-border: #D5D5D3;
-}
 body {
 	margin: 0;
 	background-color: #FBFBF9;
@@ -23,7 +16,7 @@ section,footer {
 nav {
 	padding: 0;
 	width: 100%;
-	border-bottom: 0.1rem solid var(--iltacon-border);
+	border-bottom: 0.1rem solid #D5D5D3;
 	.center-diff-bg {
 		img {
 			width: 5em;
@@ -36,7 +29,7 @@ nav {
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem 0;
-		color: var(--nav-white);
+		color: #FBFBF9;
 		height: 2.1em;
 	}
 	#button {
@@ -48,8 +41,8 @@ nav {
 				color: #B6588C;
 			}
 			background-color: transparent;
-			color: var(--iltacon-text);
-			border: 1px solid var(--iltacon-border);
+			color: #9B9C9E;
+			border: 1px solid #D5D5D3;
 			border-radius: 1rem;
 		}
 	}
