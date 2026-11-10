@@ -3,7 +3,18 @@ implementacio educacional de la imatge de la pagina de estrata
 dada por el profesor.
 
 ## Index
+- [com obrir pagina](###com_obrir_pagina)
+- [decisions d'adaptació a mòbil](###decisions_d'adaptació_a_mòbil)
 - [Llicència i Referència](###Llicència_i_Referència)
+
+## com obrir pagina
+primer per obrir la pàgina necessites uns simples passos.
+- obrir el teu navegador
+- escriure https://gzambranomendez.ieti.site o https://dzhumartins.ieti.site
+perfecte!, ja has obert la pàgina web.
+
+## decisions d'adaptació a mòbil
+Hem fet l'adaptació corresponent a mòbil veient en com es tendirà i té a veure en un telèfon.
 
 ## Llicència i Referència
 Referència tècnica per a la reproducció acadèmica de la pàgina.
