@@ -11,6 +11,7 @@ dada por el profesor.
 primer per obrir la pàgina necessites uns simples passos.
 - obrir el teu navegador
 - escriure https://gzambranomendez.ieti.site o https://dzhumartins.ieti.site
+
 perfecte!, ja has obert la pàgina web.
 
 ## decisions d'adaptació a mòbil
