@@ -152,7 +152,7 @@ nav {
 		border-radius: 15px;
 		border: 1px solid rgba(128, 128, 128, 0.401);
 		padding: 1em 1.5em;
-		h1 > span {
+		h2 > span {
 			color: #000;
 			font-weight: 700;
 		}
@@ -193,7 +193,7 @@ nav {
 		flex-flow: row;
 		background-color: rgba(211, 211, 211, 0.256);
 		align-items: center;
-		h1 {
+		h2 {
 			text-wrap: nowrap;
 			padding-right: 2em;
 		}
@@ -203,7 +203,7 @@ nav {
 	}
 }
 /* General and mobile*/
-h1 {
+h2 {
 	font-weight: 500;
 }
 p {
@@ -301,7 +301,7 @@ p {
 	flex-direction: row;
 	gap: 8em;
 
-	div>h1 {
+	div>h2 {
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 		color: #2d2c34;
 		font-size: 5em;
@@ -345,7 +345,7 @@ p {
 		div {
 			width: 60%;
 
-			h1 {
+			h2 {
 				color: white;
 				font-size: 6em;
 				margin: 0;
@@ -469,7 +469,7 @@ p {
 			border-top: 2px solid black;
 			height: max-content;
 		}
-		h1 {
+		h2 {
 			font-weight: 700;
 			font-size: 1.5em;
 			margin: 0;
@@ -766,7 +766,7 @@ footer {
 		
 		#core-surface {
 			display: block;
-			h1, p {
+			h2, p {
 				width: initial;
 			}
 		}
@@ -775,7 +775,7 @@ footer {
 	#operational-sections {
 		flex-direction: column;
 		gap: 0.5em;
-		div>h1 {
+		div>h2 {
 			font-size: 3em;
 		}
 	}
