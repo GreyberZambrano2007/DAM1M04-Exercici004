@@ -42,14 +42,14 @@ nav {
 		padding: 0;
 		margin: 0;
 		#iltacon {
+			padding: 0.25em 0.5em;
 			#dot-ilitacon {
 				color: #B6588C;
 			}
 			background-color: transparent;
 			color: var(--iltacon-text);
-			border-style: solid;
+			border: 1px solid var(--iltacon-border);
 			border-radius: 1rem;
-			border-color: var(--iltacon-border);
 		}
 	}
 	#menu{
@@ -59,6 +59,9 @@ nav {
 			color: grey;
 			padding: 0.4rem;
 			width: 50%;
+		}
+		a:hover {
+			color: #191A1B;
 		}
 	}
 }
@@ -118,15 +121,26 @@ nav {
 	color: white;
 	border-width: 0;
 	font-weight: 500;
-
+	text-wrap: nowrap;
+	text-decoration: none;
+}
+.demo-button:hover {
+	opacity: 0.9;
+	position: relative;
+	bottom: 2px;
 }
 .platform-button {
 	background-color: transparent;
 	border-width: 0;
 	font-weight: 500;
 	color: #1a1b20;
-	padding: 1em;
+	margin: 1em;
+	text-decoration: none;
 
+}
+.platform-button:hover {
+	text-decoration: underline;
+	opacity: 0.9;
 }
 .gradient-border-div {
 	background: linear-gradient(to right bottom, #50b175, #549FD7);
@@ -332,6 +346,12 @@ p {
 .grey-text {
 	color: #6c6c6a;
 }
+.border-line {
+	position: relative;
+	height: 2px;
+	width: 100%;
+	box-sizing: content-box;
+}
 #field-section {
 	margin: 0;
 	width: auto;
@@ -364,12 +384,8 @@ p {
 			border-radius: 20px;
 			overflow: hidden;
 			width: 50%;
-			#gradient-border-line {
-				position: relative;
-				height: 2px;
-				width: 100%;
+			.border-line {
 				background: linear-gradient(to right, #F5C800, #50b175, #549FD7, #8C3CC5);;
-				box-sizing: content-box;
 			}
 		}
 		table {
@@ -434,6 +450,14 @@ p {
 			text-wrap: nowrap;
 			font-size: 0.5em;
 			margin-top: 1em;
+		}
+		
+	}
+	#appeals-workflow {
+		background: linear-gradient(to right, #9c9da287 -200%, transparent 40%);
+		>span, >div {
+			position: relative;
+			left: 6vw;
 		}
 	}
 	.workflow-frames:last-of-type {
@@ -575,6 +599,7 @@ p {
 	}
 	
 	#blue {
+
 		border-top-color: #549FD7;
 		.governance-line {
 			background-color: #549FD7;
@@ -687,6 +712,9 @@ footer {
 			a {
 				color: #9c9da2;
 				text-decoration: none;
+			}
+			a:hover {
+				color: white;
 			}
 		}
 		padding: 1.5em 0;
