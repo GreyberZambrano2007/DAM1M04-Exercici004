@@ -3,9 +3,9 @@ implementacio educacional de la imatge de la pagina de estrata
 dada por el profesor.
 
 ## Index
-- [com obrir pagina](###com_obrir_pagina)
-- [decisions d'adaptació a mòbil](###decisions_d'adaptació_a_mòbil)
-- [Llicència i Referència](###Llicència_i_Referència)
+- [com obrir pagina](##com_obrir_pagina)
+- [decisions d'adaptació a mòbil](##decisions_d'adaptació_a_mòbil)
+- [Llicència i Referència](##Llicència_i_Referència)
 
 ## com obrir pagina
 primer per obrir la pàgina necessites uns simples passos.
