@@ -14,9 +14,13 @@ section,footer {
 	padding: 5em 0;
 }
 nav {
+	position: fixed;
+	background: #fbfbf9e2;
+	backdrop-filter: blur(5px) saturate(200%);
 	padding: 0;
 	width: 100%;
 	border-bottom: 0.1rem solid #D5D5D3;
+	z-index: 10;
 	.center-diff-bg {
 		img {
 			width: 5em;
@@ -346,7 +350,6 @@ p {
 .border-line {
 	position: relative;
 	height: 2px;
-	width: 100%;
 	box-sizing: content-box;
 }
 #field-section {
@@ -359,7 +362,7 @@ p {
 		flex-direction: row;
 		align-items: center;
 		gap: 2.5em;
-		div {
+		> div {
 			width: 60%;
 
 			h2 {
@@ -681,7 +684,7 @@ p {
 }
 #get-started-blocks > div:first-child {
 	border-left: none;
-	padding: 0;
+	padding-left: 0;
 }
 footer {
 	width: auto;
